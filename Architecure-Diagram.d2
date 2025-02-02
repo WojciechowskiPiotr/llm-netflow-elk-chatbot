@@ -6,10 +6,10 @@ Server DATA: {
   ElasticStack: {
     Elasticsearch <-> Kibana
   }
-  ElasticFlow -> ElasticStack.Elasticsearch
+  ElastiFlow -> ElasticStack.Elasticsearch
 }
 
 Server APP.Python <-> Server DATA.ElasticStack.Elasticsearch
 Server APP.Python <-> Server LLM.Ollama
 
-Router with NetFlow -> Server DATA.ElasticFlow: Netflow v9
+Router with NetFlow -> Server DATA.ElastiFlow: Netflow v9
