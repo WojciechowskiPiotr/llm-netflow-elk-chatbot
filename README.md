@@ -23,7 +23,15 @@ A few people asked me to release the code anyway, so here it is :)
 Just download the project, creare ```.env``` file (or not) to override default configuration variables and run code from the ```main.py```:
 
 ```shell
-$ python3 main.py
+usage: main.py [-h] [--override-dsl] [--debug]
+
+NetFlow Chat - Ask your questions in English.
+
+options:
+  -h, --help      show this help message and exit
+  --override-dsl  Override DSL template from LLM with one in dsl_query_example.json file.
+  --debug         Enable debug mode so you can so what is actually happening.
+
 ```
 
 ## Getting involved
