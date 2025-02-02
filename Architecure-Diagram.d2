@@ -1,0 +1,15 @@
+Server LLM: {
+  GPU <-> Ollama
+}
+
+Server DATA: {
+  ElasticStack: {
+    Elasticsearch <-> Kibana
+  }
+  ElasticFlow -> ElasticStack.Elasticsearch
+}
+
+Server APP.Python <-> Server DATA.ElasticStack.Elasticsearch
+Server APP.Python <-> Server LLM.Ollama
+
+Router with NetFlow -> Server DATA.ElasticFlow: Netflow v9

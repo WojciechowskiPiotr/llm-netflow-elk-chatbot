@@ -16,7 +16,7 @@ A few people asked me to release the code anyway, so here it is :)
 
 ## Architecture
 
-TODO
+![](Architecure-Diagram.png)
 
 ## Usage
 
