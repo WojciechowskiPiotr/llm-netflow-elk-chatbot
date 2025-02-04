@@ -1,0 +1,7 @@
+requests
+elasticsearch
+python-dotenv
+urllib3
+ollama
+argparse
+

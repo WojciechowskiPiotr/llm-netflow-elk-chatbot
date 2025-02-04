@@ -1,0 +1,241 @@
+{
+  "aggregations": {},
+  "collapse": {},
+  "explain": true,
+  "ext": {
+    "additionalProperty1": {},
+    "additionalProperty2": {}
+  },
+  "from": 42.0,
+  "": true,
+  "track_total_hits": true,
+  "indices_boost": [
+    {
+      "additionalProperty1": 42.0,
+      "additionalProperty2": 42.0
+    }
+  ],
+  "docvalue_fields": [
+    {
+      "field": "string",
+      "format": "string",
+      "include_unmapped": true
+    }
+  ],
+  "knn": {
+    "field": "string",
+    "query_vector": [
+      42.0
+    ],
+    "query_vector_builder": {
+      "text_embedding": {
+        "model_id": "string",
+        "model_text": "string"
+      }
+    },
+    "k": 42.0,
+    "num_candidates": 42.0,
+    "boost": 42.0,
+    "filter": {},
+    "similarity": 42.0,
+    "inner_hits": {
+      "name": "string",
+      "size": 42.0,
+      "from": 42.0,
+      "collapse": {},
+      "docvalue_fields": [
+        {
+          "field": "string",
+          "format": "string",
+          "include_unmapped": true
+        }
+      ],
+      "explain": true,
+      "": true,
+      "ignore_unmapped": true,
+      "script_fields": {
+        "additionalProperty1": {
+          "script": {
+            "source": "string",
+            "id": "string",
+            "params": {},
+            "options": {}
+          },
+          "ignore_failure": true
+        },
+        "additionalProperty2": {
+          "script": {
+            "source": "string",
+            "id": "string",
+            "params": {},
+            "options": {}
+          },
+          "ignore_failure": true
+        }
+      },
+      "seq_no_primary_term": true,
+      "fields": "string",
+      "stored_fields": "string",
+      "track_scores": true,
+      "version": true
+    }
+  },
+  "rank": {
+    "": {
+      "rank_constant": 42.0,
+      "rank_window_size": 42.0
+    }
+  },
+  "min_score": 42.0,
+  "post_filter": {},
+  "profile": true,
+  "query": {},
+  "retriever": {
+    "": {
+      "filter": {},
+      "min_score": 42.0,
+      "ruleset_ids": [
+        "string"
+      ],
+      "match_criteria": {},
+      "retriever": {},
+      "rank_window_size": 42.0
+    }
+  },
+  "script_fields": {
+    "additionalProperty1": {
+      "script": {
+        "source": "string",
+        "id": "string",
+        "params": {
+          "additionalProperty1": {},
+          "additionalProperty2": {}
+        },
+        "": "painless",
+        "options": {
+          "additionalProperty1": "string",
+          "additionalProperty2": "string"
+        }
+      },
+      "ignore_failure": true
+    },
+    "additionalProperty2": {
+      "script": {
+        "source": "string",
+        "id": "string",
+        "params": {
+          "additionalProperty1": {},
+          "additionalProperty2": {}
+        },
+        "": "painless",
+        "options": {
+          "additionalProperty1": "string",
+          "additionalProperty2": "string"
+        }
+      },
+      "ignore_failure": true
+    }
+  },
+  "search_after": [
+    42.0
+  ],
+  "size": 42.0,
+  "slice": {
+    "field": "string",
+    "id": "string",
+    "max": 42.0
+  },
+  "fields": [
+    {
+      "field": "string",
+      "format": "string",
+      "include_unmapped": true
+    }
+  ],
+  "suggest": {
+    "text": "string"
+  },
+  "terminate_after": 42.0,
+  "timeout": "string",
+  "track_scores": true,
+  "version": true,
+  "seq_no_primary_term": true,
+  "stored_fields": "string",
+  "pit": {
+    "id": "string",
+    "keep_alive": "string"
+  },
+  "runtime_mappings": {
+    "additionalProperty1": {
+      "fields": {
+        "additionalProperty1": {
+          "type": "boolean"
+        },
+        "additionalProperty2": {
+          "type": "boolean"
+        }
+      },
+      "fetch_fields": [
+        {
+          "field": "string",
+          "format": "string"
+        }
+      ],
+      "format": "string",
+      "input_field": "string",
+      "target_field": "string",
+      "target_index": "string",
+      "script": {
+        "source": "string",
+        "id": "string",
+        "params": {
+          "additionalProperty1": {},
+          "additionalProperty2": {}
+        },
+        "": "painless",
+        "options": {
+          "additionalProperty1": "string",
+          "additionalProperty2": "string"
+        }
+      },
+      "type": "boolean"
+    },
+    "additionalProperty2": {
+      "fields": {
+        "additionalProperty1": {
+          "type": "boolean"
+        },
+        "additionalProperty2": {
+          "type": "boolean"
+        }
+      },
+      "fetch_fields": [
+        {
+          "field": "string",
+          "format": "string"
+        }
+      ],
+      "format": "string",
+      "input_field": "string",
+      "target_field": "string",
+      "target_index": "string",
+      "script": {
+        "source": "string",
+        "id": "string",
+        "params": {
+          "additionalProperty1": {},
+          "additionalProperty2": {}
+        },
+        "": "painless",
+        "options": {
+          "additionalProperty1": "string",
+          "additionalProperty2": "string"
+        }
+      },
+      "type": "boolean"
+    }
+  },
+  "stats": [
+    "string"
+  ]
+}

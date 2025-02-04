@@ -1,0 +1,4 @@
+Example of questions that you can ask:
+
+- Which hosts generated traffic on port 9200 during last 10 minutes?
+

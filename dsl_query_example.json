@@ -1,0 +1,30 @@
+{
+   "query":{
+      "bool":{
+         "must":[
+            {
+               "term":{
+                  "destination.port":9200
+               }
+            },
+            {
+               "range":{
+                  "@timestamp":{
+                     "gte":"now-15m",
+                     "lt":"now"
+                  }
+               }
+            }
+         ]
+      }
+   },
+   "aggs":{
+      "unique_hosts":{
+         "terms":{
+            "field":"source.ip",
+            "size":1000
+         }
+      }
+   },
+   "size":0
+}

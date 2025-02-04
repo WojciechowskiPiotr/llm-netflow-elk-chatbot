@@ -18,9 +18,26 @@ A few people asked me to release the code anyway, so here it is :)
 
 ![](Architecure-Diagram.png)
 
+You need to install ElastiFlow and ElasticStack by yourself.
+
 ## Usage
 
-Just download the project, creare ```.env``` file (or not) to override default configuration variables and run code from the ```main.py```:
+First create local Python virtual environment 
+
+```shell
+$ python -m venv .venv
+$ source .venv/bin/activate
+```
+
+Then install all required Python libraries
+
+```shell
+$ pip install -r requirements.txt
+```
+
+You need to create API toke in your Elasticsearch and provide it as ```ES_APIKEY``` in ```.env``` file in project root folder. You may also override default configuration variables. Check ```config.py``` for details.
+
+Run code from the ```main.py```:
 
 ```shell
 usage: main.py [-h] [--override-dsl] [--debug]
